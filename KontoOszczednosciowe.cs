@@ -8,8 +8,8 @@ namespace Bank
 {
     class KontoOszczednosciowe : Konto
     {
-        public KontoOszczednosciowe(int id,  string imie, string nazwisko,  long pesel)
-            : base(id,  imie, nazwisko,  pesel)
+        public KontoOszczednosciowe(int id, string imie, string nazwisko, long pesel)
+            : base(id, imie, nazwisko, pesel)
         {
         }
         public void Nadwyzka(decimal oplata)

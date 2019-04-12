@@ -9,8 +9,8 @@ namespace Bank
     interface IDrukarka
     {
         void druk(Konto konto);
-        
 
-        
+
+
     }
 }

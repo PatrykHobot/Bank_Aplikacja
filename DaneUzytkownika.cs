@@ -11,7 +11,7 @@ namespace Bank
         public string Imie { get; }
         public string Nazwisko { get; }
         public long Pesel { get; }
-        public DaneUzytkownika(string imie,string nazwisko,string pesel)
+        public DaneUzytkownika(string imie, string nazwisko, string pesel)
         {
             Imie = imie;
             Nazwisko = nazwisko;

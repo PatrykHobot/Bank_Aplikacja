@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bank
 {
-    class KontoRozliczeniowe:Konto
+    class KontoRozliczeniowe : Konto
     {
         public KontoRozliczeniowe(int id, string imie, string nazwisko, long pesel)
             : base(id, imie, nazwisko, pesel)
@@ -15,7 +15,7 @@ namespace Bank
         }
         public void Odsetki(decimal wartosc)
         {
-            Bilans -= wartosc; 
+            Bilans -= wartosc;
         }
         public override string TypeName()
         {

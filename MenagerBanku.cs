@@ -60,7 +60,7 @@ namespace Bank
                     case 4:
                         Console.Clear();
                         Console.WriteLine("Wybrano wpłatę pieniędzy na konto");
-                        
+
                         DodajPieniadze();
 
                         Console.ReadKey();
@@ -93,22 +93,22 @@ namespace Bank
 
             }
             while (akcja != 0);
-            
 
-            
+
+
         }
         private int WyborAkcji()
-            {
-            ponow:
+        {
+        ponow:
             Console.Write("Akcja: ");
             string akcja = Console.ReadLine();
             if (string.IsNullOrEmpty(akcja))
             {
                 Console.WriteLine("Nie wpisales zadnej liczby sprobuj ponownie: ");
                 goto ponow;
-                
+
             }
-            
+
             return int.Parse(akcja);
 
         }
@@ -117,8 +117,8 @@ namespace Bank
             Console.Clear();
             DaneUzytkownika dane = Czytajdane();
             Console.WriteLine();
-            Console.WriteLine("Konto klienta: {0} {1} {2}",dane.Imie,dane.Nazwisko,dane.Pesel);
-            foreach(Konto konto in menagerKont.PobierzWszystkieKonta(dane.Imie,dane.Nazwisko,dane.Pesel))
+            Console.WriteLine("Konto klienta: {0} {1} {2}", dane.Imie, dane.Nazwisko, dane.Pesel);
+            foreach (Konto konto in menagerKont.PobierzWszystkieKonta(dane.Imie, dane.Nazwisko, dane.Pesel))
             {
                 drukarka.druk(konto);
             }
@@ -212,7 +212,7 @@ namespace Bank
         {
             Console.Clear();
             Console.WriteLine("wszystkie konta: ");
-            foreach (Konto konto in menagerKont.GetKonta()) 
+            foreach (Konto konto in menagerKont.GetKonta())
             {
                 drukarka.druk(konto);
 

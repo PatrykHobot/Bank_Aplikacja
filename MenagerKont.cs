@@ -8,11 +8,11 @@ namespace Bank
 {
     class MenagerKont
     {
-        private List<Konto> _konta;//= new List<Konto>();//czym sie rozni interfejs listy od samej listy
-        
+        private List<Konto> _konta;
+
         public MenagerKont()
         {
-            _konta = new List<Konto>();//co nam daje ze obiekt listy tworzymy w konstruktorze a nie wczesniej
+            _konta = new List<Konto>();
         }
         public IEnumerable<Konto> GetKonta()
         {
@@ -56,7 +56,7 @@ namespace Bank
         }
         public Konto GetKonto(string numerkonta)
         {
-            return _konta.Single(x => x.NumerKonta == numerkonta); 
+            return _konta.Single(x => x.NumerKonta == numerkonta);
         }
         public IEnumerable<string> ListaKlientow()
         {
@@ -73,7 +73,7 @@ namespace Bank
                 konto.Odsetki(5.0M);
             }
         }
-        public void WplacPieniadze(string numerkonta,decimal wartosc)
+        public void WplacPieniadze(string numerkonta, decimal wartosc)
         {
             Konto konto = GetKonto(numerkonta);
             konto.ZmienBalans(wartosc);

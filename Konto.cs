@@ -15,7 +15,7 @@ namespace Bank
         public long Pesel { get; }
         public int Id { get; }
 
-        public Konto(int id,  string imie, string nazwisko, long pesel)
+        public Konto(int id, string imie, string nazwisko, long pesel)
         {
             Id = id;
             NumerKonta = GenerujNumerKonta(id);
@@ -43,8 +43,8 @@ namespace Bank
         }
         public void ZmienBalans(decimal wartosc)
         {
-            Bilans= +wartosc;
+            Bilans = +wartosc;
         }
-            
+
     }
 }

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Bank
 {
-    class BystraDrukarka:IDrukarka
+    class BystraDrukarka : IDrukarka
     {
         public void druk(Konto konto)
         {
-            Console.WriteLine("Numer konta to: {0}",konto.NumerKonta);
-            Console.WriteLine("Imie i nazywsko wlasciciela to: {0}",konto.DajPelneImie());
+            Console.WriteLine("Numer konta to: {0}", konto.NumerKonta);
+            Console.WriteLine("Imie i nazywsko wlasciciela to: {0}", konto.DajPelneImie());
         }
     }
 }
